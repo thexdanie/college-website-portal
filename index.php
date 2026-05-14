@@ -1,6 +1,6 @@
 <?php 
 $pageTitle = "Home | BCC Inc.";
-require_once('config/db.php');
+require_once(__DIR__ . '/config/db.php');
 include 'includes/header.php'; 
 
 // --- 1. PHP LOGIC FOR STATS & UPDATES ---
