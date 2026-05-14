@@ -1,16 +1,15 @@
 <?php
-// Supabase Connection (PostgreSQL)
+// Supabase Connection (PostgreSQL) - Final Direct Address
 $host = "db.admvvhvycqzizzobvdie.supabase.co"; 
-$port = "6543"; // Using the pooler port for a faster connection
+$port = "5432"; 
 $dbname = "postgres";
 $user = "postgres";
-$pass = "Donasco20021"; // Make sure there are NO brackets [] here
+$pass = "Donasco20021"; 
 
 try {
     $dsn = "pgsql:host=$host;port=$port;dbname=$dbname;user=$user;password=$pass";
     $pdo = new PDO($dsn);
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    // Connection successful!
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
